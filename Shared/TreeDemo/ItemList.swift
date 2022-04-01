@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ItemList: View {
-    var items: [Item]
+    var items: [TreeItem]
     
     var body: some View {
         // 可折叠的列表

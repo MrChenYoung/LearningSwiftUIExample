@@ -19,14 +19,16 @@
 		FFA91C1D27F1524D0032954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA91BF227F1524D0032954C /* Assets.xcassets */; };
 		FFA91C2D27F171A80032954C /* TreeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C2C27F171A80032954C /* TreeList.swift */; };
 		FFA91C2E27F171A80032954C /* TreeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C2C27F171A80032954C /* TreeList.swift */; };
-		FFA91C3127F197EA0032954C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3027F197EA0032954C /* Item.swift */; };
-		FFA91C3227F197EA0032954C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3027F197EA0032954C /* Item.swift */; };
 		FFA91C3427F19CF60032954C /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3327F19CF60032954C /* ItemList.swift */; };
 		FFA91C3527F19CF60032954C /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3327F19CF60032954C /* ItemList.swift */; };
 		FFA91C3727F19D0F0032954C /* SidebarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3627F19D0F0032954C /* SidebarList.swift */; };
 		FFA91C3827F19D0F0032954C /* SidebarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3627F19D0F0032954C /* SidebarList.swift */; };
 		FFA91C3A27F19D1C0032954C /* FormList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3927F19D1C0032954C /* FormList.swift */; };
 		FFA91C3B27F19D1C0032954C /* FormList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA91C3927F19D1C0032954C /* FormList.swift */; };
+		FFAA64B327F6C87500ABF64F /* LazyHGridDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64B227F6C87500ABF64F /* LazyHGridDemo1.swift */; };
+		FFAA64B427F6C87500ABF64F /* LazyHGridDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64B227F6C87500ABF64F /* LazyHGridDemo1.swift */; };
+		FFAA64B627F6CE1800ABF64F /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64B527F6CE1800ABF64F /* TreeItem.swift */; };
+		FFAA64B727F6CE1800ABF64F /* TreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA64B527F6CE1800ABF64F /* TreeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +62,11 @@
 		FFA91C1427F1524D0032954C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		FFA91C1627F1524D0032954C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		FFA91C2C27F171A80032954C /* TreeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeList.swift; sourceTree = "<group>"; };
-		FFA91C3027F197EA0032954C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FFA91C3327F19CF60032954C /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 		FFA91C3627F19D0F0032954C /* SidebarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarList.swift; sourceTree = "<group>"; };
 		FFA91C3927F19D1C0032954C /* FormList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormList.swift; sourceTree = "<group>"; };
+		FFAA64B227F6C87500ABF64F /* LazyHGridDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridDemo1.swift; sourceTree = "<group>"; };
+		FFAA64B527F6CE1800ABF64F /* TreeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +117,8 @@
 			children = (
 				FFA91BF027F1524B0032954C /* LearningSwiftUIExampleApp.swift */,
 				FFA91BF127F1524B0032954C /* ContentView.swift */,
-				FFA91C2C27F171A80032954C /* TreeList.swift */,
-				FFA91C3327F19CF60032954C /* ItemList.swift */,
-				FFA91C3627F19D0F0032954C /* SidebarList.swift */,
-				FFA91C3927F19D1C0032954C /* FormList.swift */,
+				FFAA64AD27F6C7D700ABF64F /* TreeDemo */,
+				FFAA64AE27F6C82200ABF64F /* LazyHGridDemo */,
 				FFA91C2F27F197D60032954C /* Models */,
 				FFA91BF227F1524D0032954C /* Assets.xcassets */,
 			);
@@ -164,9 +165,28 @@
 		FFA91C2F27F197D60032954C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FFA91C3027F197EA0032954C /* Item.swift */,
+				FFAA64B527F6CE1800ABF64F /* TreeItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FFAA64AD27F6C7D700ABF64F /* TreeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FFA91C2C27F171A80032954C /* TreeList.swift */,
+				FFA91C3327F19CF60032954C /* ItemList.swift */,
+				FFA91C3627F19D0F0032954C /* SidebarList.swift */,
+				FFA91C3927F19D1C0032954C /* FormList.swift */,
+			);
+			path = TreeDemo;
+			sourceTree = "<group>";
+		};
+		FFAA64AE27F6C82200ABF64F /* LazyHGridDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FFAA64B227F6C87500ABF64F /* LazyHGridDemo1.swift */,
+			);
+			path = LazyHGridDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA91C3127F197EA0032954C /* Item.swift in Sources */,
+				FFAA64B327F6C87500ABF64F /* LazyHGridDemo1.swift in Sources */,
+				FFAA64B627F6CE1800ABF64F /* TreeItem.swift in Sources */,
 				FFA91C3A27F19D1C0032954C /* FormList.swift in Sources */,
 				FFA91C3427F19CF60032954C /* ItemList.swift in Sources */,
 				FFA91C2D27F171A80032954C /* TreeList.swift in Sources */,
@@ -341,7 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA91C3227F197EA0032954C /* Item.swift in Sources */,
+				FFAA64B427F6C87500ABF64F /* LazyHGridDemo1.swift in Sources */,
+				FFAA64B727F6CE1800ABF64F /* TreeItem.swift in Sources */,
 				FFA91C3B27F19D1C0032954C /* FormList.swift in Sources */,
 				FFA91C3527F19CF60032954C /* ItemList.swift in Sources */,
 				FFA91C2E27F171A80032954C /* TreeList.swift in Sources */,

@@ -53,7 +53,7 @@ struct ListView: View {
     ]
     
     var body: some View {
-        List(0..<myTypes.count){i in
+        List(0..<myTypes.count, id:\.self){i in
             let type: MyType = myTypes[i]
             switch type {
             case .itemsList:
@@ -75,55 +75,55 @@ struct ListView: View {
 }
 
 // 树状数据
-func listData()->[Item] {
+func listData()->[TreeItem] {
     return [
-        Item(
+        TreeItem(
             title: "Computers",
             children: [
-                Item(
+                TreeItem(
                     title: "Desktop",
                     children: [
-                        Item(title: "IMac"),
-                        Item(title: "Mac mini"),
-                        Item(title: "Mac pro")
+                        TreeItem(title: "IMac"),
+                        TreeItem(title: "Mac mini"),
+                        TreeItem(title: "Mac pro")
                     ]
                 ),
-                Item(
+                TreeItem(
                     title: "Laptop",
                     children: [
-                        Item(title: "Macbook pro"),
-                        Item(title: "MacBook air")
+                        TreeItem(title: "Macbook pro"),
+                        TreeItem(title: "MacBook air")
                     ]
                 )
             ]
         ),
-        Item(
+        TreeItem(
             title: "Smartphones",
             children: [
-                Item(title: "IPhone 11"),
-                Item(title: "IPhone 12"),
-                Item(title: "IPhone 13")
+                TreeItem(title: "IPhone 11"),
+                TreeItem(title: "IPhone 12"),
+                TreeItem(title: "IPhone 13")
             ]
         ),
-        Item(
+        TreeItem(
             title: "Tablets",
             children: [
-                Item(title: "IPad Mini"),
-                Item(title: "IPad Air"),
-                Item(title: "IPad Pro")
+                TreeItem(title: "IPad Mini"),
+                TreeItem(title: "IPad Air"),
+                TreeItem(title: "IPad Pro")
             ]
         ),
-        Item(
+        TreeItem(
             title: "Wearables",
             children: [
-                Item(title: "Apple Watch Series 3"),
-                Item(title: "Apple Watch Series 5"),
-                Item(
+                TreeItem(title: "Apple Watch Series 3"),
+                TreeItem(title: "Apple Watch Series 5"),
+                TreeItem(
                     title: "Bands",
                     children: [
-                        Item(title: "Sport Band"),
-                        Item(title: "Leather Band"),
-                        Item(title: "Milanese Band")
+                        TreeItem(title: "Sport Band"),
+                        TreeItem(title: "Leather Band"),
+                        TreeItem(title: "Milanese Band")
                     ]
                 )
             ]

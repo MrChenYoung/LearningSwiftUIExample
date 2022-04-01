@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SidebarList: View {
-    var items: [Item]
+    var items: [TreeItem]
     
     var body: some View {
         List{
